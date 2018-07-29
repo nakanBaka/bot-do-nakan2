@@ -1,0 +1,22 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+exports.run = (client, message) => {
+  const config = require('./config.json');
+  client.user.setGame("Olá, digite n.help para saber sobre mim!")
+  console.log(`> Logando...`);
+  console.log(`> Logado com sucesso!`);
+  console.log(`------------------------------------------------------
+> Carregando comandos...
+------------------------------------------------------
+Comandos carregados por: ${client.user.tag}
+Trabalhando em ${client.guilds.size} servers!
+${client.channels.size} canais e ${client.users.size} usuarios!
+Here we go!
+------------------------------------------------------
+----------Creditos a Nakan#9830-----------
+------------------------------------------------------
+-----------------S2------------------`)
+ 
+}
+
